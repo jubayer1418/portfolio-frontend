@@ -6,7 +6,7 @@ import Image from "next/image";
 import { motion, useScroll, useTransform } from "framer-motion";
 import Link from "next/link";
 
-export default function Project(project) {
+export default function Project(project:any) {
   console.log(project);
   const ref = useRef<HTMLDivElement>(null);
   const { scrollYProgress } = useScroll({
@@ -49,7 +49,7 @@ export default function Project(project) {
                 technology: <br />
               </p>
               <ul className="flex flex-wrap mt-4 gap-2 sm:mt-auto">
-            {project.technologies.split(',').map((tag, index) => (
+            {project.technologies.split(',').map((tag:any, index:any) => (
               <li
                 className="bg-black/[0.7] px-3 py-1 text-[0.7rem] uppercase tracking-wider text-white rounded-full dark:text-white/70"
                 key={index}

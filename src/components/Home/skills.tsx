@@ -44,7 +44,7 @@ export default function Skills() {
     >
       <SectionHeading>My skills</SectionHeading>
       <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4">
-        {skills?.map((skill) => (
+        {skills?.map((skill:any) => (
           <motion.div
             key={skill._id}
             variants={fadeInAnimationVariants}

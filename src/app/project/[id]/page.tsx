@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 const page = () => {
   return (
     <>
@@ -5,7 +7,9 @@ const page = () => {
         <div className=" overflow-hidden rounded shadow-sm ">
           <div className="flex flex-col pt-5 lg:flex-row sm:mx-auto">
             <div className=" lg:w-2/5 h-full px-2 py-2 detail-img">
-              <img
+              <Image
+              width={300}
+              height={200}
                 src={""}
                 alt="book cover"
                 className="object-cover w-full  lg:h-full "

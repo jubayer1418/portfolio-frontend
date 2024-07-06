@@ -25,7 +25,7 @@ export default function Projects() {
     <section ref={ref} id="projects" className="scroll-mt-28">
       <SectionHeading>My projects</SectionHeading>
       <div className="grid grid-cols-1 gap-5  ">
-        {projects.map((project) => (
+        {projects.map((project:any) => (
           <React.Fragment key={project._id}>
             <Project {...project} />
           </React.Fragment>
