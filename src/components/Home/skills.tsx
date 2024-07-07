@@ -29,7 +29,7 @@ export default function Skills() {
   const [skills, setSkills] = useState([]);
   useEffect(() => {
     const skillData = async () => {
-      const response = await fetch("https://portfolio-backend-neon-eight.vercel.app/api/v1/skill/getall");
+      const response = await fetch("https://portfolio-backend-use.vercel.app/api/v1/skill/getall");
       const data = await response.json();
       setSkills(data.skills);
     };

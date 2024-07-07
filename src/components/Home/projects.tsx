@@ -13,7 +13,7 @@ export default function Projects() {
   useEffect(() => {
     const skillData = async () => {
       const response = await fetch(
-        "https://portfolio-backend-neon-eight.vercel.app/api/v1/project/getall"
+        "https://portfolio-backend-use.vercel.app/api/v1/project/getall"
       );
       const data = await response.json();
       setprojects(data.projects);
